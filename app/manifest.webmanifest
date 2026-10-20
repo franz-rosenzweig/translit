@@ -1,0 +1,15 @@
+{
+  "name": "Translit",
+  "short_name": "Translit",
+  "description": "Make every Shabbat, Chanukah and halacha in a document spelled the same way, in the style you choose.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#E8E3D6",
+  "theme_color": "#3A4A8C",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

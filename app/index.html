@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Translit: one spelling for every Hebrew term</title>
+<meta name="description" content="Make every Shabbat, Chanukah and halacha in a document spelled the same way, in the style you choose. Free, no account, and your text never leaves your browser.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#3A4A8C" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#14161F" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Translit">
+<meta property="og:description" content="Make every Shabbat, Chanukah and halacha in a document spelled the same way, in the style you choose.">
+<meta property="og:url" content="https://stuffs.tiresia.xyz/translit/">
+<meta property="og:image" content="https://stuffs.tiresia.xyz/translit/icon-512.png">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="icon" href="icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="fonts/fonts.css">
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-pencil" viewBox="0 0 24 24"><path d="M4 20l1.2-4.4L15.6 5.2a2 2 0 0 1 2.8 0l.4.4a2 2 0 0 1 0 2.8L8.4 18.8z"/><path d="M13.8 7l3.2 3.2M4 20l4.4-1.2"/></symbol>
+    <symbol id="i-page" viewBox="0 0 24 24"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 12h6M10 15.5h6M10 19h4"/></symbol>
+    <symbol id="i-open" viewBox="0 0 24 24"><path d="M3 7v11a1.5 1.5 0 0 0 1.5 1.5h15A1.5 1.5 0 0 0 21 18V9.5A1.5 1.5 0 0 0 19.5 8H12l-2-2.5H4.5A1.5 1.5 0 0 0 3 7z"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3.5v4M12 16.5v4M3.5 12h4M16.5 12h4M6 6l2.6 2.6M15.4 15.4L18 18M18 6l-2.6 2.6M8.6 15.4L6 18"/></symbol>
+    <symbol id="i-eraser" viewBox="0 0 24 24"><path d="M9 20h11M5.6 16.4l9-9a2 2 0 0 1 2.8 0l1.2 1.2a2 2 0 0 1 0 2.8L12 18H8z"/><path d="M10 10l5 5"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15M14 7l5 5-5 5"/></symbol>
+    <symbol id="i-tick" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7"/></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><path d="M6.5 6.5l11 11M17.5 6.5l-11 11"/></symbol>
+    <symbol id="i-trash" viewBox="0 0 24 24"><path d="M4 7h16M10 7V4.5h4V7M6.5 7l1 13h9l1-13"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="12" rx="1.5"/><path d="M16 8V5.5A1.5 1.5 0 0 0 14.5 4h-9A1.5 1.5 0 0 0 4 5.5v9A1.5 1.5 0 0 0 5.5 16H8"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 20V9M7 14l5-5 5 5M5 4h14"/></symbol>
+    <symbol id="i-print" viewBox="0 0 24 24"><path d="M7 9V4h10v5"/><rect x="4" y="9" width="16" height="8" rx="1.5"/><path d="M7 14h10v6H7z"/></symbol>
+    <symbol id="i-card" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 9.5h18M7 13h10M7 16h7"/></symbol>
+    <symbol id="i-list" viewBox="0 0 24 24"><path d="M9 6h11M9 12h11M9 18h11M4.5 6h.5M4.5 12h.5M4.5 18h.5"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4.5-4.5"/></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#text" aria-label="Translit, back to your text">
+      <svg class="logo" viewBox="0 0 48 48" aria-hidden="true">
+        <g transform="rotate(-6 24 24)">
+          <rect x="6" y="10" width="36" height="28" rx="2.5" class="logo-card"/>
+          <path d="M6 16.5h36" class="logo-red"/>
+          <text x="24" y="34" text-anchor="middle" class="logo-he">ת</text>
+        </g>
+        <path d="M33 41 L45 25" class="logo-pencil"/>
+      </svg>
+      <span class="brand-name">Translit</span>
+    </a>
+    <nav class="tabs" aria-label="Screens">
+      <a href="#text" data-screen="text">Text</a>
+      <a href="#findings" data-screen="findings">Findings</a>
+      <a href="#proof" data-screen="proof">Proof</a>
+      <a href="#sheet" data-screen="sheet"><span class="long">Style sheet</span><span class="short">Sheet</span></a>
+      <a href="#styles" data-screen="styles"><span class="long">My styles</span><span class="short">Styles</span></a>
+      <a href="#terms" data-screen="terms">Terms</a>
+    </nav>
+    <div class="style-pick">
+      <label for="baseSel" class="label">House style</label>
+      <select id="baseSel"></select>
+      <a id="clientChip" class="client-chip" href="#styles" hidden></a>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- Text -------------------------------------------------------------------------------- -->
+  <section id="screen-text" class="screen" hidden>
+    <div class="text-layout">
+      <div class="paper manuscript">
+        <div class="paper-head">
+          <h1 class="label">Your text</h1>
+          <div class="tools">
+            <button type="button" class="btn ghost" data-act="open"><svg class="ic" aria-hidden="true"><use href="#i-open"/></svg>Open a file</button>
+            <button type="button" class="btn ghost" data-act="sample"><svg class="ic" aria-hidden="true"><use href="#i-spark"/></svg>Try a sample</button>
+            <button type="button" class="btn ghost" data-act="clear"><svg class="ic" aria-hidden="true"><use href="#i-eraser"/></svg>Clear</button>
+          </div>
+        </div>
+        <label for="docText" class="visually-hidden">Your text</label>
+        <textarea id="docText" spellcheck="false" placeholder="Paste a transcript, a chapter or an article here, or open a .txt or .md file."></textarea>
+        <div class="paper-foot"><span id="wordCount"></span><span id="fileName" class="faint"></span>
+          <button type="button" class="btn primary foot-check" data-act="check"><svg class="ic" aria-hidden="true"><use href="#i-pencil"/></svg>Check terms</button></div>
+        <input type="file" id="fileInput" accept=".txt,.md,.markdown,.text,text/plain,text/markdown" hidden>
+      </div>
+      <aside class="side">
+        <h2 class="side-title">House style</h2>
+        <div id="stamps" class="stamps" role="radiogroup" aria-label="House style"></div>
+        <h3 class="side-sub">Client styles</h3>
+        <div id="clientList" class="chips"></div>
+        <button type="button" class="btn primary big" data-act="check"><svg class="ic" aria-hidden="true"><use href="#i-pencil"/></svg>Check terms</button>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Findings ---------------------------------------------------------------------------- -->
+  <section id="screen-findings" class="screen" hidden>
+    <div class="bar" id="findingsBar">
+      <div class="bar-main">
+        <h1>Findings</h1>
+        <p id="findingsSummary" class="summary"></p>
+      </div>
+      <div class="bar-tools">
+        <div id="filters" class="seg" role="group" aria-label="Show">
+          <button type="button" data-act="filter" data-filter="all">All <span class="n"></span></button>
+          <button type="button" data-act="filter" data-filter="mixed">Mixed <span class="n"></span></button>
+          <button type="button" data-act="filter" data-filter="change">Will change <span class="n"></span></button>
+          <button type="button" data-act="filter" data-filter="fine">Fine <span class="n"></span></button>
+        </div>
+        <label class="inline"><span>Capitals</span>
+          <select id="capsSel">
+            <option value="keep">Keep the text's</option>
+            <option value="follow">Follow my spelling</option>
+          </select>
+        </label>
+        <a class="btn primary" href="#proof"><svg class="ic" aria-hidden="true"><use href="#i-pencil"/></svg>Proof it</a>
+      </div>
+    </div>
+    <div id="findingsEmpty" hidden></div>
+    <div id="cards" class="cards"></div>
+  </section>
+
+  <!-- Proof ------------------------------------------------------------------------------- -->
+  <section id="screen-proof" class="screen" hidden>
+    <div class="bar" id="proofBar">
+      <div class="bar-main">
+        <h1>Proof</h1>
+        <p id="proofSummary" class="summary"></p>
+        <p class="legend"><span class="lg-chg"><del>Shabbos</del><ins>Shabbat</ins></span> a change ·
+          <span class="lg-stet">Shabbos</span> left as it was (stet). Click a change to switch.</p>
+      </div>
+      <div class="bar-tools">
+        <button type="button" class="btn primary" id="applyBtn" data-act="apply"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Apply changes</button>
+        <button type="button" class="btn" data-act="copy"><svg class="ic" aria-hidden="true"><use href="#i-copy"/></svg>Copy fixed text</button>
+        <button type="button" class="btn" data-act="download"><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Download</button>
+        <button type="button" class="btn" data-act="changelist"><svg class="ic" aria-hidden="true"><use href="#i-list"/></svg>List of changes</button>
+      </div>
+    </div>
+    <div id="proofEmpty" hidden></div>
+    <div class="paper proof-paper" id="proofPaper">
+      <div class="proof-text" id="proofText"></div>
+      <div class="margin" id="proofMargin" aria-hidden="true"></div>
+    </div>
+    <details class="change-table paper" id="changeTable">
+      <summary>Every change (<span id="changeCount">0</span>)</summary>
+      <div class="table-wrap"><table><thead><tr><th>Line</th><th>Before</th><th>After</th><th></th></tr></thead><tbody id="changeRows"></tbody></table></div>
+    </details>
+  </section>
+
+  <!-- Style sheet ------------------------------------------------------------------------- -->
+  <section id="screen-sheet" class="screen" hidden>
+    <div class="bar">
+      <div class="bar-main">
+        <h1>Style sheet</h1>
+        <p class="summary"><span id="sheetCount"></span>, in the spelling you chose, with the Hebrew and a short meaning.</p>
+      </div>
+      <div class="bar-tools">
+        <div id="sheetScope" class="seg" role="group" aria-label="Which terms">
+          <button type="button" data-act="scope" data-scope="text">Terms in this text</button>
+          <button type="button" data-act="scope" data-scope="all">Every term</button>
+        </div>
+        <button type="button" class="btn" data-act="print"><svg class="ic" aria-hidden="true"><use href="#i-print"/></svg>Print</button>
+        <button type="button" class="btn" data-act="md"><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Markdown</button>
+        <button type="button" class="btn" data-act="csv"><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>CSV</button>
+      </div>
+    </div>
+    <article class="paper stylesheet">
+      <header class="ss-head">
+        <h2>Style sheet</h2>
+        <label class="ss-for"><span>For</span><input id="sheetFor" placeholder="Client, book or show" autocomplete="off"></label>
+        <p class="ss-meta"><span id="sheetStyle"></span> · <span id="sheetDate"></span></p>
+      </header>
+      <div id="sheetGrid" class="ss-grid"></div>
+    </article>
+  </section>
+
+  <!-- My styles --------------------------------------------------------------------------- -->
+  <section id="screen-styles" class="screen" hidden>
+    <div class="bar">
+      <div class="bar-main">
+        <h1>My styles</h1>
+        <p class="summary">Keep each client's choices, so the next document starts where the last one ended.</p>
+      </div>
+      <div class="bar-tools">
+        <button type="button" class="btn" id="exportBtn" data-act="export"><svg class="ic" aria-hidden="true"><use href="#i-download"/></svg>Export</button>
+        <button type="button" class="btn" data-act="import"><svg class="ic" aria-hidden="true"><use href="#i-upload"/></svg>Import</button>
+        <input type="file" id="importInput" accept=".json,application/json" hidden>
+      </div>
+    </div>
+    <p id="storageNote" class="note-bar" hidden>This browser isn't keeping anything for this page, so your styles last until you close it. Export them to keep them.</p>
+    <div class="styles-layout">
+      <div class="paper current-style">
+        <h2>The style you're using</h2>
+        <p id="currentSummary" class="lead"></p>
+        <div id="currentSaved" hidden>
+          <p>Saved as <b id="currentName"></b>, and every change saves itself.</p>
+        </div>
+        <form id="saveForm" class="row-form">
+          <label for="saveName" id="saveLabel">Save it as</label>
+          <input id="saveName" name="name" placeholder="Client or book name" autocomplete="off" maxlength="80">
+          <button class="btn primary" type="submit"><svg class="ic" aria-hidden="true"><use href="#i-check"/></svg>Save</button>
+        </form>
+        <h3>Your picks</h3>
+        <ul id="pickList" class="plain-list"></ul>
+        <h3>Your own terms</h3>
+        <ul id="customList" class="plain-list"></ul>
+        <details class="add-term" open>
+          <summary><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg>Add a term</summary>
+          <form id="customForm" class="grid-form">
+            <label><span>Spelling to use</span><input name="use" placeholder="Rambam" autocomplete="off" required></label>
+            <label><span>Other spellings to catch</span><input name="variants" placeholder="RaMBaM, Rambams" autocomplete="off"></label>
+            <label><span>Plural <span class="faint">(optional)</span></span><input name="plural" autocomplete="off"></label>
+            <label><span>Other plurals <span class="faint">(optional)</span></span><input name="pluralVariants" autocomplete="off"></label>
+            <label><span>Hebrew <span class="faint">(optional)</span></span><input name="he" dir="auto" lang="he" autocomplete="off"></label>
+            <label><span>Meaning <span class="faint">(optional)</span></span><input name="gloss" autocomplete="off"></label>
+            <button class="btn primary" type="submit"><svg class="ic" aria-hidden="true"><use href="#i-plus"/></svg>Add it</button>
+          </form>
+        </details>
+      </div>
+      <div class="saved">
+        <h2>Saved styles</h2>
+        <div id="profileList" class="saved-list"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Terms ------------------------------------------------------------------------------- -->
+  <section id="screen-terms" class="screen" hidden>
+    <div class="bar">
+      <div class="bar-main">
+        <h1>Terms</h1>
+        <p class="summary"><span id="termsCount"></span>, each in all four house styles. <span class="qy">Qy</span> marks a form I'd like a second opinion on.</p>
+      </div>
+      <div class="bar-tools">
+        <label class="search"><svg class="ic" aria-hidden="true"><use href="#i-search"/></svg><span class="visually-hidden">Search the terms</span>
+          <input type="search" id="termsSearch" placeholder="Search a spelling, Hebrew or meaning" autocomplete="off" spellcheck="false"></label>
+        <label class="inline"><span class="visually-hidden">Group</span><select id="termsGroup"></select></label>
+      </div>
+    </div>
+    <div class="paper terms-paper">
+      <div class="term-head trow" id="termHead"></div>
+      <div id="termList"></div>
+    </div>
+  </section>
+</main>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
